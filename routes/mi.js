@@ -3,7 +3,7 @@ var fs = require('fs');
 
 var router = express.Router();
 console.log('dirname = '+__dirname);
-var pkginfoPath='D:/NodeEx/UpgradeCenter/public/mi/upgrade/pkg.json';
+var pkginfoPath='/home/free/UpgradeCenter/public/mi/upgrade/pkg.json';
 /* GET home page. */
 function getpackageInfo() {
     var pkginfo = JSON.parse(fs.readFileSync(pkginfoPath));
